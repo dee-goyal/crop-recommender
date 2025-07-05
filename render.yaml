@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: crop-recommender
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn crop_recommender_app:app
+    runtime: python-3.8.10
