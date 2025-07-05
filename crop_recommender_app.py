@@ -6,9 +6,15 @@ import numpy as np
 app = Flask(__name__)
 
 
-model   = joblib.load("Crop-Recommender.pkl")
-encoder = joblib.load("Label-Encoder.pkl")
-scaler  = joblib.load("Feature-Scaler.pkl")
+# Update these lines to use absolute paths
+import os
+model_path = os.path.join(os.path.dirname(__file__), "Crop-Recommender.pkl")
+encoder_path = os.path.join(os.path.dirname(__file__), "Label-Encoder.pkl")
+scaler_path = os.path.join(os.path.dirname(__file__), "Feature-Scaler.pkl")
+
+model = joblib.load(model_path)
+encoder = joblib.load(encoder_path)
+scaler = joblib.load(scaler_path)
 
 @app.route('/')
 def home():
