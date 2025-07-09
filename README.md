@@ -95,10 +95,5 @@ Live on Render: [https://recommendation-system-u1iy.onrender.com/](https://recom
 
 ---
 
-## 📝 License
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
----
 
 <p align="center">Made with ❤️ by the AgriSage Team</p>
